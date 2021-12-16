@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Soccer App</string>
+    <string name="nickname">Nickname</string>
+    <string name="arsenal">Arsenal</string>
+    <string name="todo">TODO</string>
+    <string name="channel_name">MainChannel</string>
+    <string name="channel_description">This is example Channel</string>
+</resources>

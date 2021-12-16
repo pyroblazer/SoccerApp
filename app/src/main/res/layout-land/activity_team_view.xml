@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/team_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/arsenal"
+            android:textAlignment="center"
+            android:textColorHighlight="#00E21A1A"
+            android:textColorLink="#00000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/badge_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
+                    android:maxWidth="200dp"
+                    android:maxHeight="196dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/subscribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="subscribeTeam"
+                    android:text="SUBSCRIBE"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textShortTeam"
+                        android:layout_width="129dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/nickname"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/strTeamShort"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textFormedYear"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Formed"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/strFormedYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textLeague"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="League "
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/strLeague"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textManager"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Manager "
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/strManager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textStadium"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Stadium "
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/strStadium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textStadiumLocation"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Location "
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/strStadiumLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textStadiumCapacity"
+                        android:layout_width="129dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Capacity "
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/strStadiumCapacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            app:tabBackground="@color/cardview_light_background"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="4dp"
+            app:tabMaxWidth="800dp"
+            app:tabMinWidth="800dp"
+            app:tabMode="fixed"
+            app:tabPaddingBottom="0dp"
+            app:tabPaddingStart="10dp">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="300dp"
+                android:text="Previous Match" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upcoming Match"
+                android:minWidth="300dp"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPager" >
+
+        </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
+</ScrollView>
+
+
+
+
+

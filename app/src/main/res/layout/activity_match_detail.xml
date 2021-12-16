@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/match_detail_league_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="English Premiere League"
+            android:textAlignment="textStart"
+            android:textSize="12sp"
+            android:layout_marginLeft="18dp"/>
+
+        <TextView
+            android:id="@+id/match_detail_date_match_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="12 Febuari 2020"
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            android:layout_marginRight="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/matchdetaillinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/match_detail_home_badge_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="196dp"
+            android:maxHeight="196dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_background"
+            android:onClick="homeTeamDetail"/>
+
+        <TextView
+            android:id="@+id/match_detail_home_team"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="Manchester United"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/match_detail_full_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="FULL TIME"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top">
+
+            <TextView
+                android:id="@+id/match_detail_score_home_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="vs"
+                android:textAlignment="center"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:id="@+id/match_detail_score_away_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="28sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/match_detail_badge_away_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:maxWidth="196dp"
+            android:maxHeight="196dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_background"
+            android:onClick="awayTeamDetail"/>
+
+        <TextView
+            android:id="@+id/match_detail_away_team"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="Manchester United"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lines1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/match_detail_home_goals"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="Manchester United \n Arsenal"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:id="@+id/match_detail_ball"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:maxWidth="196dp"
+            android:maxHeight="196dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ball"
+            android:textAlignment="center"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/match_detail_away_goals"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="14dp"
+            android:text="Manchester United \n Arsenal \n Arsenal \n Arsenal"
+            android:textAlignment="textEnd"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lines2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/match_detail_shotontarget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="SHOT ON TARGET"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginEnd="@dimen/margin_right"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/match_detail_home_shot"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="10"
+                android:textAlignment="gravity"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/match_detail_away_shot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="10"
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weatherLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="196dp"
+            android:maxHeight="196dp"
+            android:scaleType="center"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/weather_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weather_Info"
+            android:textAlignment="center"
+            android:textSize="24sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
